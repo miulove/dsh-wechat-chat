@@ -1,0 +1,37 @@
+{
+  "name": "@dsh-external/dsh-wechat-chat",
+  "version": "0.1.0",
+  "description": "微信风格气泡聊天:头像、名称(小鲸鱼/kamix)、绿色/白色气泡、深色模式自适应",
+  "private": true,
+  "type": "module",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots"
+      ],
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-host-webserver": ">=0.0.1-rc <2",
+    "cordis": ">=4.0.0-rc <5"
+  }
+}
