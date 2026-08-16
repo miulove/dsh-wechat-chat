@@ -11,10 +11,6 @@ DSH (DeepSeek Harness) Web 微信风格气泡聊天插件。
 - 头像/昵称/时间戳全部通过 CSS 伪元素 + CSS 变量实现,React 重渲染不会破坏
 - 气泡宽度、圆角、尾巴、深色配色均可通过 CSS 自定义
 
-## 截图
-
-![聊天截图](screenshots/cc.png)
-
 ## 安装
 
 将插件目录放到 DSH 的 profile 插件目录,并在 profile 的 `package.json` 的
