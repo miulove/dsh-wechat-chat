@@ -1,0 +1,4 @@
+# wechat-chat bundle patch: 将自身注册为 cordis 插件
+- insert:
+    - id: wechat-chat
+      name: '@dsh-external/dsh-wechat-chat'
